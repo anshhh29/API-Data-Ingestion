@@ -12,7 +12,7 @@ mongoose.connect(process.env.MONGO_URI, {
     require('./queue/worker');
   }
 
-  app.listen(process.env.PORT || 5000, () =>
+  app.listen(process.env.PORT, () =>
     console.log('Server running')
   );
 });
